@@ -3,11 +3,9 @@ import { Button } from "./button";
 
 export default { title: "Button" };
 
-export const withText: () => React.ReactElement = () => (
-  <Button>Hello Button</Button>
-);
+export const withText: React.FC = () => <Button>Hello Button</Button>;
 
-export const withEmoji: () => React.ReactElement = () => (
+export const withEmoji: React.FC = () => (
   <Button>
     <span role="img" aria-label="so cool">
       😀 😎 👍 💯
